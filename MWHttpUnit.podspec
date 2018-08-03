@@ -1,16 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "MWHttpUnit"
-  s.version          = "1.0.2"
+  s.version          = "1.0.0"
   s.summary          = "A Unit of AFNetworking manager."
-  s.description      = <<-DESC
-    The Unit Use AFNetworking can be quickly integrated make network request component.
-                       DESC
+  s.description      = "刘念大佬开发的封装AFNetworking,进行网络缓存,上传,下载,断点操作等功能的库"
 
-  s.homepage         = "https://coding.net/u/iliunian/p/MWHttpUnit/git"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.homepage         = "https://github.com/wangjinshan/MWHttpUnit"
   s.license          = 'MIT'
-  s.author           = { "liu nian" => "i19850511@gmail.com" }
-  s.source           = { :git => "https://git.coding.net/iliunian/MWHttpUnit.git", :tag => s.version.to_s }
+  s.author           = { "金山" => "1096452045@qq.com" }
+  s.source           = { :git => "https://github.com/wangjinshan/MWHttpUnit.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '9.0'
   s.ios.deployment_target = "9.0"
