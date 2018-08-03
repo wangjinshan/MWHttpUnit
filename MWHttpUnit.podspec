@@ -16,28 +16,28 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "9.0"
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/MWHTTPUnit.h'
+  s.source_files = 'SDK/Classes/MWHTTPUnit.h'
   s.subspec 'CacheUnit' do |cu|
-    cu.source_files = 'Pod/Classes/CacheUnit/*.{h,m}'
+    cu.source_files = 'SDK/Classes/CacheUnit/*.{h,m}'
   end
 
   s.subspec 'HTTP' do |hp|
-    hp.source_files = 'Pod/Classes/HTTP/*.{h,m}'
+    hp.source_files = 'SDK/Classes/HTTP/*.{h,m}'
     hp.dependency 'AFNetworking'
   end
 
   s.subspec 'HTTPCacheUnit' do |hcu|
-    hcu.source_files = 'Pod/Classes/HTTPCacheUnit/*.{h,m}'
+    hcu.source_files = 'SDK/Classes/HTTPCacheUnit/*.{h,m}'
     hcu.dependency 'MWHttpUnit/CacheUnit'
     hcu.dependency 'MWHttpUnit/HTTP'
     hcu.dependency 'MWHttpUnit/Extension'
   end
 
   s.subspec 'Extension' do |es|
-    es.source_files = 'Pod/Classes/Extension/*.{h,m}'
+    es.source_files = 'SDK/Classes/Extension/*.{h,m}'
   end
 
-  s.public_header_files = 'Pod/Classes/MWHTTPUnit.h'
+  s.public_header_files = 'SDK/Classes/MWHTTPUnit.h'
   s.frameworks = 'UIKit'
   s.dependency 'AFNetworking'
 end
