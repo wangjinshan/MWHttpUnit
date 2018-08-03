@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = "MWHttpUnit"
+  s.name             = "IJSHttpUnit"
   s.version          = "1.0.0"
   s.summary          = "A Unit of AFNetworking manager."
   s.description      = "刘念大佬开发的封装AFNetworking,进行网络缓存,上传,下载,断点操作等功能的库"
