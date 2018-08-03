@@ -1,13 +1,18 @@
 Pod::Spec.new do |s|
-  s.name             = "IJSHttpUnit"
-  s.version          = "1.0.0"
-  s.summary          = "A Unit of AFNetworking manager."
-  s.description      = "刘念大佬开发的封装AFNetworking,进行网络缓存,上传,下载,断点操作等功能的库"
 
-  s.homepage         = "https://github.com/wangjinshan/MWHttpUnit"
+  s.name         = "IJSHttpUnit"
+  s.version      = "1.0.0"
+  s.summary          = "A Unit of AFNetworking manager."
+  s.description      = "刘念大佬开发的网络缓存库,封装AFNetworking,支持离线缓存,支持文件上传,下载,支持多文件,图片,zip,音频视频等文件的上传,支持断点续传,断点下载等功能"
+
+  s.homepage     = "https://github.com/wangjinshan/MWHttpUnit"
+
+  s.license      = "MIT (example)"
+
+  s.author             = { "wangjinshan" => "1096452045@qq.com" }
+
   s.license          = 'MIT'
-  s.author           = { "金山" => "1096452045@qq.com" }
-  s.source           = { :git => "https://github.com/wangjinshan/MWHttpUnit.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/wangjinshan/MWHttpUnit.git", :tag => "#{s.version}" ,:submodules => true}
 
   s.platform     = :ios, '9.0'
   s.ios.deployment_target = "9.0"
@@ -25,9 +30,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'HTTPCacheUnit' do |hcu|
     hcu.source_files = 'SDK/Classes/HTTPCacheUnit/*.{h,m}'
-    hcu.dependency 'MWHttpUnit/CacheUnit'
-    hcu.dependency 'MWHttpUnit/HTTP'
-    hcu.dependency 'MWHttpUnit/Extension'
+    hcu.dependency 'IJSHttpUnit/CacheUnit'
+    hcu.dependency 'IJSHttpUnit/HTTP'
+    hcu.dependency 'IJSHttpUnit/Extension'
   end
 
   s.subspec 'Extension' do |es|
@@ -37,4 +42,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'SDK/Classes/MWHTTPUnit.h'
   s.frameworks = 'UIKit'
   s.dependency 'AFNetworking'
+
+  
+
 end
