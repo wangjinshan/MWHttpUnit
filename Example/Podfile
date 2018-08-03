@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'MWHttpUnit_Example' do
+  pod 'MWHttpUnit', :path => '../'
+  pod 'AFNetworking'
+end
+
+target 'MWHttpUnit_Tests' do
+  pod 'MWHttpUnit', :path => '../'
+end
